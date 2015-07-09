@@ -8,3 +8,5 @@ Output Assignment
 
 var myJob=8;
 console.log(myJob + " years");//Number Variable
+var isFirefighter=false;
+console.log(isFirefighter);//Boolean is obtained
