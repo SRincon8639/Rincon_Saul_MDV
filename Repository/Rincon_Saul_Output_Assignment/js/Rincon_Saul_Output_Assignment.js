@@ -6,3 +6,5 @@ Output Assignment
 */
 
 
+var myJob=8;
+console.log(myJob + " years");//Number Variable
