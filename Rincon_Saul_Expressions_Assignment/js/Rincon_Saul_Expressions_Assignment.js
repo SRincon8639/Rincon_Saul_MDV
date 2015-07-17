@@ -30,6 +30,6 @@ console.log(total+ " " + "games stored at home");//Adds total of all gamesStored
 
 
 //Outputs
-console.log("I have" +" "+ myGames + " " + "games but if I buy 5 more, I will have" + " " + fiveMoreGames+ " "+"games");
-console.log("I have" +" "+ myGames + " " + "games but if I sell 10, I will have" + " " + tenLessGames+ " " + "games");
-console.log("If I gave away half of my" + " " + myGames+ " "+ "games, I will have" + " " + divideAllGames+" "+ "left");
+console.log("I have" +" "+ myGames + " " + "games but if I buy 5 more, I will have" + " " + fiveMoreGames+ " "+"games");//This output combines 24 total of games and adds 5 more
+console.log("I have" +" "+ myGames + " " + "games but if I sell 10, I will have" + " " + tenLessGames+ " " + "games");//This output combines 24 total games minus 10
+console.log("If I gave away half of my" + " " + myGames+ " "+ "games, I will have" + " " + divideAllGames+" "+ "left");//This output shows that if I divide my total games in half, I will have 12
