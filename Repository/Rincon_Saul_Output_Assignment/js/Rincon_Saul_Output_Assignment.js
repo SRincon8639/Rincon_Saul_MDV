@@ -8,8 +8,10 @@ Output Assignment
 
 var myJob=8;
 console.log(myJob + " years");//Number Variable
+
 var isFirefighter=false;
 console.log(isFirefighter);//Boolean is obtained
+
 var phrase="I was in the United States Army Infantry from 2003 through 2006";//String variable
 console.log(phrase);
 
@@ -20,4 +22,7 @@ var myKids=3;
 console.log(myKids);//Number variable
 
 var yearsofWisdom=30;
-console.log(yearsofWisdom + " years of it");//String variable
+console.log(yearsofWisdom + " years of it");//Number variable
+
+var myModulo= 15 % 2;
+console.log(myModulo);
