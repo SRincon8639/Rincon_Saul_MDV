@@ -25,30 +25,30 @@ confirm("Do you have the ammuniton to attend? (Ok for Yes, Cancel for No)");//Th
 //var emptyString=prompt("How many rounds were bought");
 
 
-if(currentAmmo>=ammoRequired){
+if(currentAmmo>=ammoRequired){									//If 200 is greater than or equal to 500, you can attend training
 	console.log("You can attend the training");
 }
 
 else{
-	var emptyString=prompt("How much ammo do you need to buy?");
+	var emptyString=prompt("How much ammo do you need to buy?");//User input will add a number
 	
 		}
-if(emptyString>=ammoToBuy){
+if(emptyString>=ammoToBuy){										//Empty string will be user input greater than or equal to 500, 
 	console.log("You have enough");
 }
 else{
-	prompt("You need to enter 300!");
+	prompt("You need to enter 300!");							//if user does not follow alert and enter different number, you will be prompt to add 300
 if("">=300){
-	console.log("You cant go training if you dont have enough rounds");
+	console.log("You cant go training if you dont have enough rounds");//if user input is less than 300, you cant attend training
 	}
 
 else{
-	prompt("For the last time, enter 300!");
+	prompt("For the last time, enter 300!");					//If user input does not want to enter 300, will be reminded again
 }
 
 
 }
-(currentAmmo+ammoToBuy===ammoRequired)? console.log("Go to training"):console.log("Get more ammo!");
+(currentAmmo+ammoToBuy===ammoRequired)? console.log("Go to training"):console.log("Get more ammo!");//ternary will indicate whether u can go to training or not
 
 
 
