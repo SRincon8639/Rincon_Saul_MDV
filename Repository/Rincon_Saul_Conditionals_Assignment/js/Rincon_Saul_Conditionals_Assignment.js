@@ -10,7 +10,7 @@ SDI Conditional Assignment
 var currentAmmo=200;
 var ammoRequired=500;
 var ammoToBuy=300;
-var noAmmo=false;			//Boolean
+
 
 
 
@@ -19,48 +19,50 @@ alert("You have 200 rounds but need 500 to attend training.");//This alert will 
 console.log("I currently have"+" " + currentAmmo +" "+"rounds to attend handgun training" + ".");//All the console logs below will address to the user what he needs to add to make calculation work
 console.log("I need " + " "+ ammoRequired+ " "+ "rounds to attend the handgun training"+ ".");
 console.log("Since I am short on ammunition, I need" +" "+ (ammoRequired-currentAmmo)+" "+ "more to meet the requirement" + ".");
-console.log("It is"+" " + noAmmo +" "+ "that I don't have enough ammuniton to attend training "+".");
 
-noAmmoLeft=confirm("Do you have the ammuniton to attend? (Ok for Yes, Cancel for No)");//This confirm is used to dictate whether you have the bullets to train or not
 
-if(noAmmo===false){
-	prompt("How many rounds do you have total?");
+confirm("Do you have the ammuniton to attend? (Ok for Yes, Cancel for No)");//This confirm is used to dictate whether you have the bullets to train or not
+//var emptyString=prompt("How many rounds were bought");
+
+
+if(currentAmmo>=ammoRequired){
+	console.log("You can attend the training");
+}
+
+else{
+	var emptyString=prompt("How much ammo do you need to buy?");
 	
-
-if(ammoRequired===500){
-	console.log("Lets go shoot!");
-}
-else if(ammoRequired>500){
-	console.log("You cant train");
-
-}
-else {
-	console.log("We can now attend the training!");
-	}
-}
-else {
-	console.log(" We can attend the training due to"+" "+ ammoToBuy+ " "+"extra rounds bought");
-	//var emptyString=prompt("How many rounds were bought");
-
-
-	if(emptyString===""){
-		emptyString=prompt("Enter the rounds that were bought NOW!!")
-		
-
-		if(""<500){
-			console.log("You cant train if you dont have the rounds");
 		}
+if(emptyString>=ammoToBuy){
+	console.log("You have enough");
+}
+else{
+	prompt("You need to enter 300!");
+if("">=300){
+	console.log("You cant go training if you dont have enough rounds");
 	}
 
 else{
-	emptyString=("");
-	console.log("Finally, lets go training with"+" "+ emptyString+" "+"rounds"+".");
-	}
+	prompt("For the last time, enter 300!");
 }
+
+
+}
+(currentAmmo+ammoToBuy===ammoRequired)? console.log("Go to training"):console.log("Get more ammo!");
 
 
 
 	
+
+
+
+
+
+
+
+
+
+
 
 
 
